@@ -20,9 +20,3 @@ class StockSupply:
     __metaclass__ = PoolMeta
     __name__ = 'stock.supply'
 
-    @property
-    def _production_parameters(self):
-        parameters = super(StockSupply, self)._requests_parameters
-        if self.start.warehouses:
-            parameters['warehouses'] = self.start.warehouses
-        return parameters

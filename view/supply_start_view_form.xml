@@ -2,7 +2,7 @@
 <!-- The COPYRIGHT file at the top level of this repository contains the full
      copyright notices and license terms. -->
 <data>
-    <xpath expr="/form" position="inside">
+    <xpath expr="/form/label[@id='supply']" position="after">
         <field name="warehouses" colspan="2"/>
     </xpath>
 </data>
