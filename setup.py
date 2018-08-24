@@ -5,10 +5,7 @@ from setuptools import setup
 import re
 import os
 import io
-try:
-    from configparser import ConfigParser
-except ImportError:
-    from ConfigParser import ConfigParser
+from configparser import ConfigParser
 
 MODULE = 'stock_supply_production_warehouse'
 PREFIX = 'nantic'

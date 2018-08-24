@@ -6,8 +6,7 @@ from trytond.pool import PoolMeta
 __all__ = ['StockSupplyStart', 'StockSupply']
 
 
-class StockSupplyStart:
-    __metaclass__ = PoolMeta
+class StockSupplyStart(metaclass=PoolMeta):
     __name__ = 'stock.supply.start'
 
     warehouses = fields.Many2Many('stock.location', None, None, 'Warehouses',
@@ -16,7 +15,6 @@ class StockSupplyStart:
             ])
 
 
-class StockSupply:
-    __metaclass__ = PoolMeta
+class StockSupply(metaclass=PoolMeta):
     __name__ = 'stock.supply'
 
